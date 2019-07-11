@@ -5,6 +5,9 @@ let dealerTotal = Math.ceil(Math.random() * 10) + Math.ceil(Math.random() * 11)
 let options = ['HIT', 'STAY']
 //Get username
 let userName = prompt.question('Welcome to 21! What is your name?')
+if (!userName) {
+    userName = 'Loser'
+}
 console.log(`I'll be glad to take your money ${userName}.`)
 
 function userChoices() {
